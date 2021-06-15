@@ -1,0 +1,104 @@
+html {
+  font-family: "Inter", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -webkit-text-stroke-width: 0;
+  -moz-osx-font-smoothing: grayscale;
+  box-sizing: border-box;
+  background: #FFFFFF;
+}
+
+body {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  overflow: hidden;
+}
+
+article {
+  padding: 40px;
+  width: 100%;
+  color: #000;
+}
+article header {
+  position: relative;
+}
+article h1, article h2, article h3 {
+  margin: 0 0 30px 0;
+}
+article h1 {
+  cursor: crosshair;
+  white-space: nowrap;
+  margin-top: -120px;
+  position: fixed;
+  display: inline-block;
+  font-size: 100px;
+  margin-bottom: 0;
+  transition: transform 0.1s ease-out, left 0.05s ease-in, top 0.05s ease-in;
+}
+article h2 {
+  margin-top: 120px;
+  font-size: 70px;
+  line-height: 75px;
+}
+article h3 {
+  font-size: 34px;
+  line-height: 40px;
+}
+article a {
+  color: #000;
+}
+
+footer {
+  display: flex;
+  flex-wrap: wrap;
+}
+footer img {
+  height: 100%;
+}
+footer a {
+  text-decoration: none;
+  position: relative;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  font-size: 20px;
+  margin-right: 15px;
+  margin-bottom: 10px;
+  padding: 7px 8px;
+  border-radius: 6px;
+}
+footer a:hover {
+  background: #EEEEEE;
+}
+footer svg {
+  width: 25px;
+  height: auto;
+  display: block;
+}
+
+.explosion {
+  position: absolute;
+  top: 40px;
+  left: 220px;
+  transform: translate(-50%, -50%);
+  opacity: 1;
+  width: 80px;
+  height: 80px;
+  background: url("../img/explosion.png") 0px 0px no-repeat;
+  background-size: 100%;
+}
+
+.explosion.fade-out {
+  opacity: 0;
+  transition: opacity 1s ease-in-out;
+}
+
+@media only screen and (min-width: 900px) {
+  article {
+    width: auto;
+  }
+}
+
+/*# sourceMappingURL=styles.css.map */
